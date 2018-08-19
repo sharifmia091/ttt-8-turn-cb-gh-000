@@ -34,7 +34,13 @@ def on_board(number)
   end
 end
 
-def valid_
+def valid_move?(board, index)
+  if ((possition_taken?(board, index) == false) && (on_board==true))
+    return true
+  else 
+    return false
+  end
+end
 
 
 def turn(board)
