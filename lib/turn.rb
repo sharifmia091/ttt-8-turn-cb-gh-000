@@ -7,6 +7,8 @@ def display_board(board)
 end
 
 def turn(board)
-  puts "Please enter 1-9"
+  puts "Where would you like to go?"
+  puts "Please enter 1-9 to "
   
+
 end
