@@ -18,6 +18,9 @@ def move(board,index,character ="X")
   return board
 end
 
+def possition_taken?(board, index)
+  if ((board[index]== " ") || (board[index]== "") || (board[index]== nil))
+
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
