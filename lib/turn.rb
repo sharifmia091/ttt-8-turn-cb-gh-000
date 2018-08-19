@@ -6,12 +6,6 @@ def display_board(board)
   puts" #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-
-
-
-
-
-
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
@@ -22,13 +16,12 @@ def turn(board)
     input-=1
     return input
   end
+
   index = input_to_index(input)
 
   def move(board,index,character ="X")
     board[index] = character
-
     return board
-
   end
 
   display_board(board)
