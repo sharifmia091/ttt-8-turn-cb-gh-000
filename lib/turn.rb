@@ -52,7 +52,6 @@ def turn(board)
     display_board(board)
 
   else
-    puts "Plz enter valid move"
+    turn(board)
   end
-  display_board(board)
 end
