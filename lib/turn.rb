@@ -26,7 +26,7 @@ def turn(board)
 
   def move(board,index,character ="X")
     board[index] = character
-    board = board[index]
+    
     return board
 
   end
