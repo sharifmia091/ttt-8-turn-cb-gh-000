@@ -19,14 +19,13 @@ def move(board,index,character ="X")
 end
 
 def possition_taken?(board, index)
-  
   if ((board[index]== " ") || (board[index]== "") || (board[index]== nil))
     retrun false
   else
     retur true
   end
 end
-    
+
 
 def turn(board)
   puts "Where would you like to go?"
