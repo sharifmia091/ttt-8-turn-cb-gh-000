@@ -23,7 +23,7 @@ def turn(board)
     return input
   end
   index = input_to_index(input)
-  
+
   def move(board,index,character ="X")
     board[index] = character
     puts display_board(board)
@@ -31,4 +31,3 @@ def turn(board)
 
 
 end
-
