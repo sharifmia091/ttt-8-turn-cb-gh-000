@@ -21,15 +21,15 @@ def valid_move?(board, index)
     end
   end
 
-  def on_board(input)
-    if input.between?(0,8) == true
+  def on_board?(number)
+    if number.between?(0,8) == true
       return true
     else
       return false
     end
   end
 
- if possition_taken?(board, index) == false && on_board==true
+ if possition_taken?(board, index) == false && on_board?==true
     return true
  else
     return false
@@ -46,8 +46,8 @@ end
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
-  input = gets.strip
-  index = input_to_index(input)
+  number = gets.strip
+  index = input_to_index(number)
 
   if valid_move?(board, index)==true
     move(board,index)
