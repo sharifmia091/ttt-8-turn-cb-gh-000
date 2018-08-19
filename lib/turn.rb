@@ -13,6 +13,9 @@ def input_to_index(input)
   return input
 end
 
+
+
+
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
@@ -22,7 +25,7 @@ def turn(board)
 
 end
 
-
 def move(board,index,character ="X")
   board[index] = character
 end
+
