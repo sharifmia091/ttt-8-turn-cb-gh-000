@@ -13,10 +13,7 @@ def input_to_index(input)
 end
 
 
-def move(board,index,character ="X")
-  board[index] = character
-  return board
-end
+
 
 def valid_move?(board, index)
   def possition_taken?(board, index)
@@ -40,6 +37,11 @@ def valid_move?(board, index)
  end
 end
 
+
+def move(board,index,character ="X")
+  board[index] = character
+  return board
+end
 
 def turn(board)
   puts "Where would you like to go?"
