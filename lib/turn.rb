@@ -46,8 +46,8 @@ end
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
-  number = gets.strip
-  index = input_to_index(number)
+  input = gets.strip
+  index = input_to_index(input)
 
   if valid_move?(board, index)==true
     move(board,index)
