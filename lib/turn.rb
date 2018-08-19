@@ -12,15 +12,12 @@ def input_to_index(input)
   return input
 end
 
-
-
-
 def valid_move?(board, index)
   def possition_taken?(board, index)
     if (board[index]== " ") || (board[index]== "") || (board[index] == nil)
       return false
     else
-      retur true
+      return true
     end
 
   def on_board(index)
