@@ -19,8 +19,8 @@ def move(board,index,character ="X")
 end
 
 def possition_taken?(board, index)
-  if ((board[index]== " ") || (board[index]== "") || (board[index]== nil))
-    retrun false
+  if (board[index]== " ") || (board[index]== "") || (board[index] == nil)
+    return false
   else
     retur true
   end
