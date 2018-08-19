@@ -23,7 +23,7 @@ def turn(board)
     board[index] = character
     return board
   end
-
+  board = [" "," "," "," "," "," "," "," "," "]
   display_board(board)
 
 
