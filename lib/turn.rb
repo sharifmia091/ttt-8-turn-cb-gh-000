@@ -43,6 +43,7 @@ def move(board,index,character ="X")
   return board
 end
 
+
 def turn(board)
   puts "Where would you like to go?"
   puts "Please enter 1-9 to "
