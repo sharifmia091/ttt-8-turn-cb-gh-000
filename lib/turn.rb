@@ -18,29 +18,26 @@ def move(board,index,character ="X")
   return board
 end
 
-def possition_taken?(board, index)
-  if (board[index]== " ") || (board[index]== "") || (board[index] == nil)
-    return false
-  else
-    retur true
-  end
-end
-
-def on_board(index)
-  if index.between?(0,8) == true
-    return true
-  else
-    return false
-  end
-end
-
 def valid_move?(board, index)
+  def possition_taken?(board, index)
+    if (board[index]== " ") || (board[index]== "") || (board[index] == nil)
+      return false
+    else
+      retur true
+    end
 
-  if possition_taken?(board, index) == false && on_board==true
+  def on_board(index)
+    if index.between?(0,8) == true
+      return true
+    else
+      return false
+    end
+
+ if possition_taken?(board, index) == false && on_board==true
     return true
-  else
+ else
     return false
-  end
+ end
 end
 
 
