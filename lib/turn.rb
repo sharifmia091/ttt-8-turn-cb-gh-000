@@ -37,7 +37,7 @@ end
 def valid_move?(board, index)
   if ((possition_taken?(board, index) == false) && (on_board==true))
     return true
-  else 
+  else
     return false
   end
 end
@@ -48,6 +48,9 @@ def turn(board)
   puts "Please enter 1-9 to "
   input = gets.strip
   index = input_to_index(input)
-  move(board,index)
+  if (valid_move?(board, index)==true)
+    move(board,index)
+  else
+    puts "Plz enter valid move"
   display_board(board)
 end
