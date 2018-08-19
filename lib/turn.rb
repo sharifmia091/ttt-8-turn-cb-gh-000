@@ -52,5 +52,6 @@ def turn(board)
     move(board,index)
   else
     puts "Plz enter valid move"
+  end
   display_board(board)
 end
