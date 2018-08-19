@@ -26,7 +26,7 @@ def possition_taken?(board, index)
   end
 end
 
-def on_board(number)
+def on_board(index)
   if number.between?(0,8) == true 
     return true
   else
