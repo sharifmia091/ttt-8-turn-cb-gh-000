@@ -26,6 +26,16 @@ def possition_taken?(board, index)
   end
 end
 
+def on_board(number)
+  if (number.between?(0,8) == true )
+    return true
+  else
+    return false
+  end
+end
+
+def valid_
+
 
 def turn(board)
   puts "Where would you like to go?"
